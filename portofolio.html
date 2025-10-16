@@ -34,6 +34,27 @@
     .container {
       max-width: 1000px;
       margin: 0 auto;
+      position: relative;
+    }
+
+    /* Tombol Kembali */
+    .back-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    .back-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
     }
 
     header {
@@ -127,12 +148,19 @@
       header h1 {
         font-size: 24px;
       }
+      .back-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+    <!-- Tombol Kembali -->
+    <a href="index.html" class="back-btn">← Kembali</a>
+
     <header>
       <h1>Portofolio Saya</h1>
       <p>Beberapa project yang telah saya kerjakan.</p>
@@ -145,9 +173,7 @@
         <div class="project-content">
           <h3>Website Tongkrongan</h3>
           <p>Website komunitas yang dibangun menggunakan PHP Native dengan dukungan HTML, CSS, dan JavaScript. Menampilkan desain modern, interaktif, dan responsif di berbagai perangkat.</p>
-
           <a class="btn" href="https://tongkrongan.zya.me" target="_blank">Lihat Project</a>
-            <a class="btn" href="index.html" target="_blank">kembali</a>
         </div>
       </div>
 
@@ -156,9 +182,8 @@
         <img src="image/webdesa.png" alt="Desa Sukadana Project">
         <div class="project-content">
           <h3>Website Desa Sukadana</h3>
-             <p>Website profil desa yang dikembangkan menggunakan HTML, CSS, dan JavaScript. Dirancang untuk menampilkan informasi desa secara informatif, modern, dan mudah diakses oleh masyarakat.</p>
+          <p>Website profil desa yang dikembangkan menggunakan HTML, CSS, dan JavaScript. Dirancang untuk menampilkan informasi desa secara informatif, modern, dan mudah diakses oleh masyarakat.</p>
           <a class="btn" href="https://harlan2707.github.io/desasukadana.github.oi/" target="_blank">Lihat Project</a>
-           <a class="btn" href="index.html" target="_blank">kembali</a>
         </div>
       </div>
     </section>
